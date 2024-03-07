@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+require('dotenv').config()
 
 const app = express();
 
@@ -15,8 +16,8 @@ app.post("/submit-form", (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "paulpadro03@gmail.com",
-      pass: "rxafumuidjspowjm",
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
   });
 
