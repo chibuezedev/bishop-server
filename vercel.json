@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "tenant-server",
+    "name": "bishop-server",
     "builds": [{ "src": "server.js", "use": "@vercel/node" }],
     "routes": [{ "src": "/(.*)", "dest": "/server.js" }]
 }
